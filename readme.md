@@ -2,7 +2,7 @@
 
 - **[演练的链接（HTML 格式）](https://microsoftlearning.github.io/AZ-900T0x-MicrosoftAzureFundamentals/)**
 - **[下载最新演练（Word 格式）](../../releases/latest)**
-- **你是 MCT 吗？** - 请查看[适用于 MCT 的 GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide/)
+- **你是 MCT 吗？** - 请查看[适用于 MCT 的 GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide-ZH)
 - **是否需要手动生成实验说明？** - 可在 [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) 存储库中找到说明
 
 ## 我们要做什么？
