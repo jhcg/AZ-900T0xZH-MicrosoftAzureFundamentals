@@ -1,13 +1,13 @@
 ﻿---
 wts:
-    title: '10 - 使用 PowerShell 创建 VM'
-    module: '模块 02 - 核心 Azure 服务'
+    title: '10 - 使用 PowerShell 创建 VM（10 分钟）'
+    module: '模块 03：描述核心解决方案和管理工具'
 ---
 # 10 - 使用 PowerShell 创建 VM
 
 在本演练中，我们将配置 Cloud Shell，使用 Azure PowerShell 模块创建资源组和虚拟机，并查看 Azure 顾问建议。 
 
-# 任务 1：配置 Cloud Shell
+# 任务 1：配置 Cloud Shell（10 分钟）
 
 在此任务中，我们将配置 Cloud Shell。 
 
@@ -19,7 +19,7 @@ wts:
 
 3. 如果你之前使用过 Cloud Shell，请继续执行下一个任务。 
 
-4. 当提示你选择 **“Bash”** 或 **“PowerShell”** 时，选择 **“PowerShell”**。 
+4. 当提示你选择 **“Bash”** 或 **“PowerShell”** 时，选择 **“PowerShell”**。
 
 5. 当系统出现提示时，选择 **“创建存储”**，并等待 Azure Cloud Shell 初始化。 
 

@@ -1,15 +1,13 @@
 ﻿---
 wts:
-    title: '13 - 实现 Azure Key Vault'
-    module: '模块 03 - 安全性、隐私、合规性和信任'
+    title: '12 - 实现 Azure Key Vault（5 分钟）'
+    module: '模块 04：介绍常见安全性和网络安全功能'
 ---
-# 13 - 实现 Azure Key Vault
+# 12 - 实现 Azure Key Vault
 
 在本演练中，我们将创建一个 Azure Key Vault，然后在该 Key Vault 中创建一个密码机密，从而提供安全存储且集中管理的密码，以用于应用程序。
 
-预计用时：10 分钟
-
-# 任务 1：创建 Azure Key Vault
+# 任务 1：创建 Azure Key Vault（5 分钟）
 
 1. 登录至 [Azure 门户](https://portal.azure.com)。
 
