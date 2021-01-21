@@ -1,4 +1,4 @@
----
+﻿---
 wts:
     title: '11 - 使用 CLI 创建 VM（10 分钟）'
     module: '模块 03：描述核心解决方案和管理工具'
@@ -96,7 +96,7 @@ az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table
 
 在此任务中，我们将查看 Azure 顾问建议。 
 
-    **注意：** 如果已完成上一个实验（使用 PowerShell 创建 VM），那么就已完成此任务。 
+**注意：** 如果已完成上一个实验（使用 PowerShell 创建 VM），那么就已完成此任务。 
 
 1. 在门户中，搜索并选择 **顾问**。 
 
@@ -106,7 +106,7 @@ az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table
 
 3. 选择 **所有建议** 并花一些时间查看每个建议和建议的操作。 
 
-    **注意：**建议会根据资源情况而有所不同。 
+**注意：**建议会根据资源情况而有所不同。 
 
     ![顾问“所有建议”页面的屏幕截图。 ](../images/1104.png)
 
