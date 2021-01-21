@@ -108,7 +108,7 @@ az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table
 
 **注意：** 建议会根据资源情况而有所不同。 
 
-    ![顾问“所有建议”页面的屏幕截图。](../images/1104.png)
+![顾问“所有建议”页面的屏幕截图。](../images/1104.png)
 
 4. 请注意，可将建议下载为 CSV 或 PDF 文件。 
 
