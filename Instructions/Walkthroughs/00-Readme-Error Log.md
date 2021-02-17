@@ -1,5 +1,5 @@
----
+﻿---
 wts:
-    title: '00 - Readme - Error Log'
-    module: 'Module 00 - Course Introduction'
+    title: '00 - 自述文件 - 错误日志'
+    module: '模块 00 - 课程简介'
 ---
