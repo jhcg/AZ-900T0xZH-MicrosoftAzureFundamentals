@@ -1,4 +1,4 @@
-﻿---
+---
 wts:
     title: '10 - 使用 PowerShell 创建 VM（10 分钟）'
     module: '模块 03：描述核心解决方案和管理工具'
