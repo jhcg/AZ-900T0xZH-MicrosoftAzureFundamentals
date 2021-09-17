@@ -1,7 +1,5 @@
 ﻿# AZ-900T00 和 AZ-900T01：Microsoft Azure 基础知识
 
-> **我们提供了[实验室录制和演示存储库](https://github.com/MicrosoftLearning/Lab-Demo-Recordings)，其中包含 Microsoft 官方课程中所使用实验室的视频链接。通过这些链接，Microsoft 认证培训师可轻松访问课程组合中所使用动手实验室的非语音版录制。通过这些链接，Microsoft 认证培训师可轻松访问课程组合中所使用动手实验室的非语音版录制。**
-
 - **[演练的链接（HTML 格式）](https://microsoftlearning.github.io/AZ-900T0xZH-MicrosoftAzureFundamentals/)**
 - **你是 MCT 吗？** - 请查看[适用于 MCT 的 GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide-ZH/)
 
@@ -25,12 +23,12 @@
 
 ## 如何参与内容编辑？
 
-- 每位 MCT 都可向 GitHub 存储库中的代码或内容提交拉取请求，Microsoft 和课程作者将对内容进行鉴别分类，并根据需要采纳内容和实验室代码更改。
+- 每位 MCT 都可向 GitHub 存储库中的代码或内容提交拉取请求，Microsoft 和课程作者将对内容进行分类，并根据需要采纳内容和实验室代码更改。
 
 - 你可以提交 Bug、更改、改进内容和想法。  比我们先发现 Azure 新功能？  提交新的演示吧！
 
-## 备注：
+## 备注
 
 ### 课堂材料
 
-强烈建议 MCT 和合作伙伴查看这些材料，然后将它们分别提供给学生。  如果在课程中直接让学生访问 GitHub 来查看实验室步骤，将需要学生访问另一个 UI，这样更容易使其迷惑不解。向学生解释他们收到单独实验室说明的原因，这可以突显基于云的界面和平台具有不断变化的性质。仅为讲授此课程的 MCT 提供有关访问 GitHub 上的文件以及导航 GitHub 站点的 Microsoft Learning 支持。
+强烈建议 MCT 和合作伙伴依次查看这些材料，然后将它们分别提供给学生。  如果在课程中直接让学生访问 GitHub 来查看实验室步骤，将需要学生访问另一个 UI，这样更容易使其迷惑不解。向学生解释他们收到单独实验室说明的原因，这可以突显基于云的界面和平台具有不断变化的性质。仅为讲授此课程的 MCT 提供有关访问 GitHub 上的文件以及导航 GitHub 网站的 Microsoft Learning 支持。

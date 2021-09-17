@@ -1,31 +1,35 @@
----
+﻿---
 wts:
     title: '11 - 使用 CLI 创建 VM（10 分钟）'
     module: '模块 03：描述核心解决方案和管理工具'
 ---
-# 11 - 使用 CLI 创建 VM
+# 11 - 使用 CLI 创建 VM（10 分钟）
 
 在本演练中，我们将配置 Cloud Shell，使用 Azure CLI 创建资源组和虚拟机，并查看 Azure 顾问建议。 
 
-# 任务 1：配置 Cloud Shell（10 分钟）
+# 任务 1：配置 Cloud Shell 
 
-在此任务中，我们将配置 Cloud Shell。 
+在此任务中，我们将配置 Cloud Shell，然后使用 Azure CLI 创建资源组和虚拟机。  
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 
 2. 单击 Azure 门户右上方的图标，在 Azure 门户中打开 **Azure Cloud Shell**。
 
     ![Azure 门户“Azure Cloud Shell”图标的屏幕截图。](../images/1002.png)
+   
+3. 在“欢迎使用 Azure Cloud Shell”对话中，当提示选择“**Bash**”或“**PowerShell**”时，请选择“**Bash**”。 
 
-3. 如果你之前使用过 Cloud Shell，请继续执行下一个任务。 
+4. 将打开一个显示“**你没有安装任何存储**”的新窗口。选择“**高级设置**”。
 
-4. 当提示你选择 **“Bash”** 或 **“PowerShell”** 时，选择 **“Bash”**。 
+5. 在“高级设置”屏幕中，填写以下字段，然后单击“创建存储”：
+    - 资源组：**创建新的资源组**
+    - 存储帐户：创建一个使用全局唯一名称的新帐户（例如：cloudshellstoragemystorage）
+    - 文件共享：创建一个新文件共享并将其命名为 cloudshellfileshare
 
-5. 当系统出现提示时，单击 **“创建存储”**，并等待 Azure Cloud Shell 初始化。 
 
-# 任务 2：创建资源组和虚拟机
+# 任务 2：使用 CLI 创建新虚拟机
 
-在此任务中，我们将使用 Azure CLI 创建资源组和虚拟机。  
+在此任务中，我们将使用 Azure CLI 创建资源组和虚拟机。
 
 1. 确保在 **Cloud Shell** 窗格左上方的下拉菜单中选择 **Bash** （如果未选择，请进行选择）。
 
@@ -43,20 +47,20 @@ wts:
     az group list --output table
     ```
 
-4. 创建一个新虚拟机。请确保每一行后面都有反斜杠 (`\`) 字符（最后一行除外）。如果在同一行键入完整命令，请勿使用反斜杠字符。 
+4. 请在 Cloud Shell 中输入以下命令，并确保每一行后面都有反斜杠 (`\`) 字符（最后一行除外）。如果在同一行键入完整命令，请勿使用反斜杠字符。 
 
     ```cli
     az vm create \
     --name myVMCLI \
     --resource-group myRGCLI \
     --image UbuntuLTS \
-    --location EastUS \
+    --location EastUS2 \
     --admin-username azureuser \
     --admin-password Pa$$w0rd1234
     ```
 
     >**备注**：如果在 Windows 计算机上使用此命令行，请将反斜杠 (`\`) 字符替换为脱字符 (`^`)。
-    
+
     **备注**：该命令将需要 2 至 3 分钟才能完成。该命令将创建一个虚拟机以及与之关联的各种资源，例如存储、网络和安全资源。在虚拟机部署完成之前，请勿继续进行下一步。 
 
 5. 命令完成运行后，在浏览器窗口关闭 Cloud Shell 窗格。

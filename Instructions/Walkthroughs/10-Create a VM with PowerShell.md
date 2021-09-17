@@ -1,13 +1,13 @@
----
+﻿---
 wts:
     title: '10 - 使用 PowerShell 创建 VM（10 分钟）'
     module: '模块 03：描述核心解决方案和管理工具'
 ---
-# 10 - 使用 PowerShell 创建 VM
+# 10 - 使用 PowerShell 创建 VM（10 分钟）
 
 在本演练中，我们将配置 Cloud Shell，使用 Azure PowerShell 模块创建资源组和虚拟机，并查看 Azure 顾问建议。 
 
-# 任务 1：配置 Cloud Shell（10 分钟）
+# 任务 1：配置 Cloud Shell 
 
 在此任务中，我们将配置 Cloud Shell。 
 
@@ -17,11 +17,17 @@ wts:
 
     ![Azure 门户“Azure Cloud Shell”图标的屏幕截图。](../images/1002.png)
 
-3. 如果你之前使用过 Cloud Shell，请继续执行下一个任务。 
+3. 提示选择“**Bash**”或“**PowerShell**”时，选择“**PowerShell**”。
 
-4. 当提示你选择 **“Bash”** 或 **“PowerShell”** 时，选择 **“PowerShell”**。
+4. 在“**你没有安装任何存储**”屏幕中，选择“**显示高级设置**”，然后填写以下信息
 
-5. 当系统出现提示时，单击 **“创建存储”**，并等待 Azure Cloud Shell 初始化。 
+    | 设置 | 值 |
+    |  -- | -- |
+    | 资源组 | **创建新的资源组** |
+    | 存储账户（创建一个使用全局唯一名称的新帐户（例如：cloudshellstoragemystorage）） | **cloudshellxxxxxxx** |
+    | 文件共享（新建） | **shellstorage** |
+
+5. 选择“**创建存储**”
 
 # 任务 2：创建资源组和虚拟机
 
@@ -29,19 +35,13 @@ wts:
 
 1. 确保在“Cloud Shell”窗格左上方的下拉菜单中选中 **“PowerShell”**。
 
-2. 在 Cloud Shell 窗格的 PowerShell 会话中，创建新的资源组。 
-
-    ```PowerShell
-    New-AzResourceGroup -Name myRGPS -Location EastUS
-    ```
-
-3. 验证你的新资源组。 
+2. 通过在 Powershell 窗口中运行以下命令来验证新资源组。按 **Enter** 运行该命令。
 
     ```PowerShell
     Get-AzResourceGroup | Format-Table
     ```
 
-4. 创建虚拟机。当系统出现提示时，提供将被配置为该虚拟机上的本地管理员帐户的用户名 (**azureuser**) 和密码 (**Pa$$w0rd1234**)。确保包括每行末尾（最后一行除外）的反引号 (`) 字符（如果在一行上键入整个命令，则不应包含任何反引号字符）。
+3. 通过将以下命令粘贴到终端窗口中来创建虚拟机。 
 
     ```PowerShell
     New-AzVm `
@@ -53,9 +53,10 @@ wts:
     -SecurityGroupName "myNSGPS" `
     -PublicIpAddressName "myPublicIpPS"
     ```
-** 等待 VM 部署完成后再关闭 PowerShell
+    
+4. 当系统出现提示时，提供将被配置为该虚拟机上的本地管理员帐户的用户名 (azureuser) 和密码 (Pa$$w0rd1234)
 
-5. 关闭 Cloud Shell 窗格的 PowerShell 会话。
+5. 创建 VM 后，请关闭“Cloud Shell”窗格中的 PowerShell 会话。
 
 6. 在 Azure 门户中，搜索 **“虚拟机”** 并验证 **myVMPS** 是否正在运行。这可能需要几分钟时间。
 
@@ -77,13 +78,14 @@ wts:
     Get-AzVM -name myVMPS -status | Format-Table -autosize
     ```
 
-4. 停止虚拟机。出现提示时，确认（选择“是”）操作。 
+4. 使用以下命令停止虚拟机。 
 
     ```PowerShell
     Stop-AzVM -ResourceGroupName myRGPS -Name myVMPS
     ```
+5. 出现提示时，确认（选择“是”）操作。等待出现“**成功**”状态。
 
-5. 验证你的虚拟机状态。PowerState 现在应为 **“解除分配”**。你还可以在门户中验证虚拟机状态。 
+6. 验证你的虚拟机状态。PowerState 现在应为“**解除分配**”。你还可以在门户中验证虚拟机状态。关闭 Cloudshell。
 
     ```PowerShell
     Get-AzVM -name myVMPS -status | Format-Table -autosize
