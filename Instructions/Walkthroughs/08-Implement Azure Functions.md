@@ -1,4 +1,4 @@
-﻿---
+---
 wts:
     title: '08 - 实现 Azure Functions（5 分钟）'
     module: '模块 03：描述核心解决方案和管理工具'
