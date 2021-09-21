@@ -54,7 +54,7 @@ wts:
     -PublicIpAddressName "myPublicIpPS"
     ```
     
-4. 当系统出现提示时，提供将被配置为该虚拟机上的本地管理员帐户的用户名 (azureuser) 和密码 (Pa$$w0rd1234)
+4. 当系统出现提示时，提供将被配置为该虚拟机上的本地管理员帐户的用户名 (**azureuser**) 和密码 (**Pa$$w0rd1234**)
 
 5. 创建 VM 后，请关闭“Cloud Shell”窗格中的 PowerShell 会话。
 

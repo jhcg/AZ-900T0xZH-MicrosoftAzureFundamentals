@@ -60,11 +60,11 @@ wts:
 
 1. 在 Web 浏览器中打开一个新的选项卡，然后键入此快捷链接 https://aka.ms/RaspPi。你会进入 Raspberry Pi 模拟器站点。如果有时间，请阅读有关 Raspberry Pi 模拟器的信息。完成后选择“X”关闭弹出窗口。
 
-2. 在右侧的编码区域中，找到带有'const connectionString ='的行。将它替换你在 Azure 门户中复制的连接字符串。请注意，连接字符串包含 DeviceId (myRaspberryPi) 和 SharedAccessKey 条目。
+2. 在右侧的编码区域中，找到带有'const connectionString ='的行。将它替换你在 Azure 门户中复制的连接字符串。请注意，连接字符串包含 DeviceId (**myRaspberryPi**) 和 SharedAccessKey 条目。
 
 	![Raspberry Pi 模拟器中编码区域的屏幕截图。](../images/0604.png)
 
-3. 单击“运行**”（代码区域下方）以运行应用程序。控制台输出应显示从 Raspberry Pi 模拟器发送到 Azure IoT 中心的传感器数据和消息。每次 Raspberry Pi 模拟器 LED 闪烁时，都会发送数据和消息。 
+3. 单击“**运行**”（代码区域下方）以运行应用程序。控制台输出应显示从 Raspberry Pi 模拟器发送到 Azure IoT 中心的传感器数据和消息。每次 Raspberry Pi 模拟器 LED 闪烁时，都会发送数据和消息。 
 
 	![Raspberry Pi 模拟器控制台的屏幕截图。  控制台输出显示了从 Raspberry Pi 模拟器发送到 Azure IoT 中心的传感器数据和消息。](../images/0605.png)
 
