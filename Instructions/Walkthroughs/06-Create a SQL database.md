@@ -12,7 +12,7 @@ wts:
 
 在此任务中，我们将基于“AdventureWorksLT”示例数据库创建 SQL 数据库。 
 
-1. 登录至 Azure 门户，网址：[https://portal.azure.com](https://portal.azure.com)
+1. 登录至 Azure 门户，网址：[**https://portal.azure.com**](https://portal.azure.com)
 
 2. 从“**所有服务**”边栏选项卡，搜索并选择“**SQL 数据库**”，然后单击“**+ 添加**”、“**+ 创建**”、“**+ 新建**”。 
 

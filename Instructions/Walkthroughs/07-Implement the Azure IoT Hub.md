@@ -58,7 +58,7 @@ wts:
 
 在此任务中，我们将使用 Raspberry Pi 模拟器测试设备。 
 
-1. 在 Web 浏览器中打开一个新的选项卡，然后键入此快捷链接 https://aka.ms/RaspPi。你会进入 Raspberry Pi 模拟器站点。如果有时间，请阅读有关 Raspberry Pi 模拟器的信息。完成后选择“X”关闭弹出窗口。
+1. 在 Web 浏览器中打开一个新的选项卡，然后键入此快捷链接 https://aka.ms/RaspPi 。你会进入 Raspberry Pi 模拟器站点。如果有时间，请阅读有关 Raspberry Pi 模拟器的信息。完成后选择“X”关闭弹出窗口。
 
 2. 在右侧的编码区域中，找到带有'const connectionString ='的行。将它替换你在 Azure 门户中复制的连接字符串。请注意，连接字符串包含 DeviceId (**myRaspberryPi**) 和 SharedAccessKey 条目。
 
